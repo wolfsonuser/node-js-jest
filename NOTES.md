@@ -56,3 +56,137 @@ added 860 packages, and audited 861 packages in 2m
 	Ran all test suites.
 
 	wolfsonuser52nv53c@DESKTOP-52NV53C MINGW64 ~/GITHUB/node-js-jest (master)
+
+
+## ===================================================================
+
+### after running npm audit fix (no --force)
+
+
+wolfsonuser52nv53c@DESKTOP-52NV53C MINGW64 ~/GITHUB/node-js-jest (master)
+$ npm audit fix
+npm WARN audit fix tar@4.4.1 node_modules/fsevents/node_modules/tar
+npm WARN audit fix tar@4.4.1 is a bundled dependency of
+npm WARN audit fix tar@4.4.1 fsevents@1.2.4 at node_modules/fsevents
+npm WARN audit fix tar@4.4.1 It cannot be fixed automatically.
+npm WARN audit fix tar@4.4.1 Check for updates to the fsevents package.
+npm WARN audit fix ini@1.3.5 node_modules/fsevents/node_modules/ini
+npm WARN audit fix ini@1.3.5 is a bundled dependency of
+npm WARN audit fix ini@1.3.5 fsevents@1.2.4 at node_modules/fsevents
+npm WARN audit fix ini@1.3.5 It cannot be fixed automatically.
+npm WARN audit fix ini@1.3.5 Check for updates to the fsevents package.
+npm WARN audit fix minimist@1.2.0 node_modules/fsevents/node_modules/rc/node_modules/minimist
+npm WARN audit fix minimist@1.2.0 is a bundled dependency of
+npm WARN audit fix minimist@1.2.0 fsevents@1.2.4 at node_modules/fsevents
+npm WARN audit fix minimist@1.2.0 It cannot be fixed automatically.
+npm WARN audit fix minimist@1.2.0 Check for updates to the fsevents package.
+npm WARN audit fix minimist@0.0.8 node_modules/fsevents/node_modules/minimist
+npm WARN audit fix minimist@0.0.8 is a bundled dependency of
+npm WARN audit fix minimist@0.0.8 fsevents@1.2.4 at node_modules/fsevents
+npm WARN audit fix minimist@0.0.8 It cannot be fixed automatically.
+npm WARN audit fix minimist@0.0.8 Check for updates to the fsevents package.
+npm WARN audit fix mkdirp@0.5.1 node_modules/fsevents/node_modules/mkdirp
+npm WARN audit fix mkdirp@0.5.1 is a bundled dependency of
+npm WARN audit fix mkdirp@0.5.1 fsevents@1.2.4 at node_modules/fsevents
+npm WARN audit fix mkdirp@0.5.1 It cannot be fixed automatically.
+npm WARN audit fix mkdirp@0.5.1 Check for updates to the fsevents package.
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.     
+
+added 134 packages, removed 100 packages, changed 240 packages, and audited 895 packages in 40s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+ansi-regex  >2.1.1 <5.0.1
+Severity: moderate
+ Inefficient Regular Expression Complexity in chalk/ansi-regex - https://github.com/advisories/GHSA-93q8-gq69-wqmw
+fix available via `npm audit fix --force`
+Will install jest@27.4.3, which is a breaking change
+node_modules/ansi-regex
+node_modules/string-length/node_modules/ansi-regex
+  strip-ansi  4.0.0 - 5.2.0
+  Depends on vulnerable versions of ansi-regex
+  node_modules/string-length/node_modules/strip-ansi
+  node_modules/strip-ansi
+    string-length  2.0.0 - 3.1.0
+    Depends on vulnerable versions of strip-ansi
+    node_modules/string-length
+      @jest/reporters  <=26.4.0
+      Depends on vulnerable versions of node-notifier
+      Depends on vulnerable versions of string-length
+      node_modules/@jest/reporters
+        @jest/core  <=25.5.4
+        Depends on vulnerable versions of @jest/reporters
+        node_modules/@jest/core
+          jest  24.2.0-alpha.0 - 25.5.4
+          Depends on vulnerable versions of @jest/core
+          Depends on vulnerable versions of jest-cli
+          node_modules/jest
+          jest-cli  24.2.0-alpha.0 - 25.5.4
+          Depends on vulnerable versions of @jest/core
+          node_modules/jest-cli
+      jest-watcher  <=26.0.0-alpha.2
+      Depends on vulnerable versions of string-length
+      node_modules/jest-watcher
+    string-width  2.1.0 - 4.1.0
+    Depends on vulnerable versions of strip-ansi
+    node_modules/string-width
+      widest-line  2.0.0 - 2.0.1
+      Depends on vulnerable versions of string-width
+      node_modules/widest-line
+        boxen  1.3.0 - 3.2.0
+        Depends on vulnerable versions of widest-line
+        node_modules/boxen
+
+glob-parent  <5.1.2
+Severity: high
+Regular expression denial of service - https://github.com/advisories/GHSA-ww39-953v-wcq6
+fix available via `npm audit fix --force`
+Will install nodemon@2.0.15, which is a breaking change
+node_modules/glob-parent
+  chokidar  1.0.0-rc1 - 2.1.8
+  Depends on vulnerable versions of glob-parent
+  node_modules/chokidar
+    nodemon  1.4.2 - 1.19.4
+    Depends on vulnerable versions of chokidar
+    node_modules/nodemon
+
+node-notifier  <8.0.1
+Severity: moderate
+OS Command Injection in node-notifier - https://github.com/advisories/GHSA-5fw9-fq32-wv5p
+fix available via `npm audit fix --force`
+Will install jest@27.4.3, which is a breaking change
+node_modules/node-notifier
+  @jest/reporters  <=26.4.0
+  Depends on vulnerable versions of node-notifier
+  Depends on vulnerable versions of string-length
+  node_modules/@jest/reporters
+    @jest/core  <=25.5.4
+    Depends on vulnerable versions of @jest/reporters
+    node_modules/@jest/core
+      jest  24.2.0-alpha.0 - 25.5.4
+      Depends on vulnerable versions of @jest/core
+      Depends on vulnerable versions of jest-cli
+      node_modules/jest
+      jest-cli  24.2.0-alpha.0 - 25.5.4
+      Depends on vulnerable versions of @jest/core
+      node_modules/jest-cli
+
+15 vulnerabilities (12 moderate, 3 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+
+
+## =====================================================================
+
+### after npm audit fix --force:
+
