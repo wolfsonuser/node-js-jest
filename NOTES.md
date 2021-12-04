@@ -190,3 +190,23 @@ To address all issues (including breaking changes), run:
 
 ### after npm audit fix --force:
 
+wolfsonuser52nv53c@DESKTOP-52NV53C MINGW64 ~/GITHUB/node-js-jest (master)
+$ git commit -m "Run npm audit fix no --force"
+[master c0fcd94] Run npm audit fix no --force
+ 2 files changed, 6907 insertions(+), 7148 deletions(-)
+
+wolfsonuser52nv53c@DESKTOP-52NV53C MINGW64 ~/GITHUB/node-js-jest (master)
+$ npm audit fix --force
+npm WARN using --force Recommended protections disabled.
+npm WARN audit Updating nodemon to 2.0.15,which is a SemVer major change.
+npm WARN audit Updating jest to 27.4.3,which is a SemVer major change.   
+
+added 65 packages, removed 319 packages, changed 155 packages, and audited 641 packages in 32s
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+wolfsonuser52nv53c@DESKTOP-52NV53C MINGW64 ~/GITHUB/node-js-jest (master)
+
